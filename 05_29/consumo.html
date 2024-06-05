@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Consumo</title>
+        <script>
+            // crie um algorotimo que receba o KM iinicial e o final,preço da gasolina e autonomia do veiculo
+            //   Ao final deve exibir a distancia percorrida, quantidade gasta de gasolina e custo de viagem 
+            let km_inicial
+            let km_final
+        
+            let p_gasolina
+           
+            let quanto_faz_por_litro
+
+            let total_litros
+            let total_custo
+
+            km_inicial= window.prompt("Digite o Km inicial")
+            km_inicial=Number(km_inicial)
+            console.log(km_inicial)
+
+            km_final= window.prompt("Digite o Km final")
+            km_final=Number(km_final)
+            console.log(km_final)
+
+            let delta_KM=km_final-km_inicial
+            console.log("A distancia percorrida é",delta_KM)
+
+            p_gasolina= window.prompt("Digite o valor da gasolina(por litro)")
+            p_gasolina=Number(p_gasolina)
+            console.log(p_gasolina)
+
+            quanto_faz_por_litro= window.prompt("Digite quantos KM o carro faz por LITRO")
+            quanto_faz_por_litro=Number(quanto_faz_por_litro)
+            console.log(quanto_faz_por_litro)
+
+            
+
+           let g_gasolina=delta_KM/quanto_faz_por_litro
+            let p_viagem=g_gasolina*p_gasolina
+            console.log("A distancia percorrida é",delta_KM)
+           console.log("A quantidade gasta de gasolina é",g_gasolina)
+            console.log("O preço da viagem é",p_viagem)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
