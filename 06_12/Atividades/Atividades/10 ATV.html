@@ -1,0 +1,28 @@
+<html>
+   <head>
+    <tiple>Primeira pagina</tiple>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+    let numero=[],maiorNum=0,menorNum=0
+     for(let i = 0; i <10; i++){
+      numero[i]=window.prompt("Digite um numero")
+     }
+
+     Number(numero)
+     maiorNum = numero [0]
+     menorNum = numero[0]
+
+     for(let i = 0; i < 10; i++){
+      if(numero[i]>maiorNum){
+        maiorNum=numero[i]
+      }
+      else if(numero[i]<menorNum){
+            menorNum=numero[i]
+      }
+     
+     }
+     alert("O maior numero é:"+maiorNum +"_____"+ "O menor numero é:"+menorNum)
+
+    </script>
+   </head> 
+</html>

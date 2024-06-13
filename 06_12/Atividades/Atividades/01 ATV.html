@@ -1,0 +1,33 @@
+<html>
+   <head>
+    <tiple>Primeira pagina</tiple>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+      let notas=[]
+      let soma =  0
+      let media = 0
+        for(let i = 0; i < 4; i++)
+        {
+         notas[i]=window.prompt(`Digite a nota do aluno `);
+            notas=Number(notas);
+            media += notas;
+        }
+       media=media/4
+    alert("A media do luno é"+media);
+
+    if(media >= 7)
+    {
+        alert("Aprovado")
+    }
+    else if(media >= 5)
+    {
+        alert("Recuperação")
+    }
+    else{
+        alert("Reprovado")
+    }
+
+
+    </script>
+   </head> 
+</html>
